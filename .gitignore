@@ -1,3 +1,8 @@
+.metadata
+bin/
+tmp/
+.settings
+
 # Compiled class file
 *.class
 
