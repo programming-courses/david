@@ -12,7 +12,6 @@ public class Ejemplo1 {
 		t.addRoot("un");
 		t.insertLeft(t.root(), "En");
 		
-		
 		Position<String> lastPos = t.insertRight(t.root(), "de");
 		t.insertLeft(lastPos, "lugar");
 		lastPos = t.insertRight(lastPos, "la");
@@ -24,12 +23,5 @@ public class Ejemplo1 {
 	public static void main(String[] args) {
 		Ejemplo1 e = new Ejemplo1();
 		e.creacionArbol();
-		
-		
-		
-		
-		new LinkedBinaryTree<String>();
-		
 	}
-
 }

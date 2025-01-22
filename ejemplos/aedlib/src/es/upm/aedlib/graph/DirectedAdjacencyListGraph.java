@@ -34,7 +34,7 @@
 /*     */   public Edge<E> insertDirectedEdge(Vertex<V> paramVertex1, Vertex<V> paramVertex2, E paramE) throws IllegalArgumentException {
 /*  35 */     AdjacencyListGraph<V, E>.MyVertex<V> myVertex1 = checkVertex(paramVertex1);
 /*  36 */     AdjacencyListGraph<V, E>.MyVertex<V> myVertex2 = checkVertex(paramVertex2);
-/*  37 */     AdjacencyListGraph.MyEdge<E> myEdge = new AdjacencyListGraph.MyEdge<E>(this, paramVertex1, paramVertex2, paramE);
+/*  37 */     AdjacencyListGraph.MyEdge<E> myEdge = new AdjacencyListGraph.MyEdge<E>(paramVertex1, paramVertex2, paramE);
 /*  38 */     if (paramVertex1.equals(paramVertex2)) {
 /*  39 */       Position<Edge<E>> position1 = myVertex1.insertIncidence(myEdge);
 /*  40 */       myEdge.setIncidences(position1, position1);
